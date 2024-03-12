@@ -23,8 +23,6 @@ pipeline {
         success {
             // Actions à effectuer en cas de succès du pipeline
             echo 'Le pipeline a réussi!'
-
-            // Ajoutez d'autres actions ici si nécessaire
         }
 
         failure {
