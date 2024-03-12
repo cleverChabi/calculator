@@ -12,7 +12,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                // Exécutez les tests unitaires
+                // Exécutez les tests 
                 sh '/Users/estherchabi/apache-maven-3.9.6/bin/mvn test'
             }
         } 
