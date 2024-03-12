@@ -15,12 +15,13 @@ pipeline {
                 // Exécutez les tests unitaires
                 sh 'mvn test'
             }
-        }
+        } 
 
         stage('Deploy') {
             steps {
                 // Ajoutez les étapes de déploiement ici
                 // Par exemple, déployez l'application sur un serveur
+                sh 'mvn test'
             }
         }
     }
