@@ -28,8 +28,6 @@ pipeline {
         failure {
             // Actions à effectuer en cas d'échec du pipeline
             echo 'Le pipeline a échoué. Vérifiez les logs pour plus d\'informations.'
-
-            // Ajoutez d'autres actions ici si nécessaire
         }
     }
 }
