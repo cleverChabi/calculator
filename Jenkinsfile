@@ -6,24 +6,17 @@ pipeline {
         stage('Build') {
             steps {
                 // Exécutez les commandes de build ici
-                sh 'mvn clean package'
+                sh '/Users/estherchabi/apache-maven-3.9.6/bin/mvn clean package'
             }
         }
 
         stage('Test') {
             steps {
                 // Exécutez les tests unitaires
-                sh 'mvn clean test'
+                sh '/Users/estherchabi/apache-maven-3.9.6/bin/mvn test'
             }
         } 
 
-        stage('Deploy') {
-            steps {
-                // Ajoutez les étapes de déploiement ici
-                // Par exemple, déployez l'application sur un serveur
-                sh 'mvn clean test'
-            }
-        }
     }
 
     post {
