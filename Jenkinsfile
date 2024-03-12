@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Cette étape récupère le code source depuis le dépôt Git
-                checkout scm
-            }
-        }
 
         stage('Build') {
             steps {
