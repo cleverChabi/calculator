@@ -6,6 +6,7 @@ pipeline {
       steps{
         echo 'Building the application'
         echo 'Building the application2'
+        echo 'Building the application3'
       }
     }
 
